@@ -1,0 +1,133 @@
+@import "reset.css";
+
+.hidden{
+    display: none;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 1s linear;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:30vh;
+}
+
+
+
+#clock{
+  color:white;
+  font-weight: bold;  
+  font-size:62px;
+}
+#greeting{
+    color:white;
+    margin:20% 0%;
+    font-size:24px;
+}
+#login-form input{
+    all:unset;
+    padding:10px 20px;
+    margin: 20% 0%;
+    background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    transition: linear .5s;
+}
+
+
+
+#login-form input:focus,
+#todo-form input:focus
+{
+    box-shadow: 0px 0px 5px 3px plum;
+}
+
+#todo-list button:hover{
+    box-shadow: 0px 0px 5px 3px plum;
+}
+   
+
+#login-form button{
+    all:unset;
+    padding:10px 10px;
+    text-align: center;
+    background-color:white;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: linear .2s;
+    margin:0% 30px;
+}
+
+#login-form button:hover{
+    box-shadow: 0px 0px 5px 3px plum;
+}
+
+#todo-form input{
+    all:unset;
+    padding:15px 100px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: linear .5s;
+    margin-bottom: 10%;
+}
+
+#todo-list span{
+    text-align: center;
+    color:white;
+    font-size:28px;
+    font-weight: 800;
+}
+
+#quote{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#quote span{
+    color:blanchedalmond;
+    font-style: italic;
+}
+
+#todo-list button{
+    all:unset;
+    padding:10px 10px;
+    text-align: center;
+    background-color:white;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: linear .2s;
+    margin:0% 30px;
+}
+
+#weather{
+    position: absolute;
+    top:0;
+    right: 0;
+    color:white;
+}
