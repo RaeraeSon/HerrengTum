@@ -127,7 +127,10 @@
 
 #weather{
     position: absolute;
-    top:0;
+    top:10px;
     right: 0;
     color:white;
+    display: flex;
+    align-items: center;
 }
+
