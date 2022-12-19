@@ -1,10 +1,11 @@
-const toDoForm=document.getElementById("todo-form");
+/*const toDoForm=document.getElementById("todo-form");
 const toDoInput=toDoForm.querySelector("#todo-form input");
 const toDoList=document.getElementById("todo-list");
 
 const TODOS_KEY="todos";
 let toDos=[];
 
+export {toDoForm,toDoInput,toDoList,TODOS_KEY};
 function saveToDos(){
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
@@ -55,3 +56,6 @@ if(savedToDos !== null){
     toDos=parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+*/
+
+//로그아웃 버튼 관련 문제로 해당 코드는 greetings.js 파일로 이전되었음

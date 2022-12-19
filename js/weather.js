@@ -29,7 +29,7 @@ function handleError(){
 }
 
 function getWeather(lat, lon){
-    const url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}&lang=kr`;
+    const url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=kr&appid=${API_KEY}`;
     fetch(url).then(function(response){
         return response.json();
     })
