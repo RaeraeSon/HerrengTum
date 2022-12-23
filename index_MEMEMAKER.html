@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Maker</title>
+</head>
+<body>
+    <div class="bar">
+        <p onclick="openNav()"><i class="fa-solid fa-bars fa-3x"></i></p>
+    </div>
+    <div class="menu-bar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index_MEMEMAKER.html" target="_self"><i class="fa-solid fa-paintbrush"></i>밈메이커</a>
+        <a href="index.html" target="_self"><i class="fa-solid fa-image-portrait"></i>헐랭툼</a>
+    </div>
+    <div class="color-options">
+        <div>
+            <span>선택된 색깔👉</span>
+            <input type="color" id="color">
+        </div>
+        
+        <div class="color-option" style="background-color:#1abc9c " data-color="#1abc9c"></div>
+        <div class="color-option" style="background-color:#3498db " data-color="#3498db"></div>
+        <div class="color-option" style="background-color:#34495e " data-color="#34495e"></div>
+        <div class="color-option" style="background-color:#27ae60 " data-color="#27ae60"></div>
+        <div class="color-option" style="background-color:#8e44ad" data-color="#8e44ad"></div>
+        <div class="color-option" style="background-color:#f1c40f " data-color="#f1c40f"></div>
+        <div class="color-option" style="background-color:#e74c3c " data-color="#e74c3c"></div>
+        <div class="color-option" style="background-color:#95a5a6 " data-color="#95a5a6"></div>
+        <div class="color-option" style="background-color:#7d5fff " data-color="#7d5fff"></div>
+        <div class="color-option" style="background-color:#18dcff " data-color="#18dcff"></div>
+        <div class="color-option" style="background-color:#2ecc71 " data-color="#2ecc71"></div>
+        <div class="color-option" style="background-color:#e67e22 " data-color="#e67e22"></div>
+    </div>
+    
+    <canvas></canvas>
+    <div class="btns">
+        <span>Pencil Width</span>
+        <input id="line-width" type="range" min="1" max="10" value="5" step="0.1">
+        <button id="mode-btn">채우기🥛</button>
+        <button id="destroy-btn">전체삭제💣</button>
+        <button id="eraser-btn">지우개✨</button>
+        <label for="file">
+            이미지 선택📷
+            <input type="file" accept="image/*" id="file">
+        </label>
+        <input type="text" placeholder="💬글을 추가해보세요😙" id="text">
+        <button id="save">이미지 저장하기✔</button>
+    </div>
+    <div class="explain">
+        <span>글을 추가하는 란에 글자를 입력하고 팔렛트에 더블클릭을 하면 해당 글씨가 출력됩니다!</span>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/aa6ccc2321.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
