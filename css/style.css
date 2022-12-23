@@ -1,5 +1,9 @@
 @import "reset.css";
 
+body{
+    font-family: 'Dongle', sans-serif;
+   
+}
 .hidden{
     display: none;
 }
@@ -28,7 +32,7 @@
     align-items: center;
     justify-content: center;
     margin-top:30vh;
-    font-family: 'Dongle', sans-serif;
+    
 }
 
 #log-out{
@@ -81,12 +85,11 @@
     text-align: center;
     background-color:white;
     color:black;
-    font-weight: bold;
     cursor: pointer;
     border-radius: 20px;
     transition: linear .2s;
     margin:0% 30px;
-    font-size:28px;
+    font-size:24px;
 }
 
 
@@ -141,5 +144,45 @@
     color:white;
     display: flex;
     align-items: center;
+    font-size:28px;
 }
+
+i{
+    color:white;
+}
+
+
+.menu-bar{
+    height: 100%;
+    position:fixed;
+    left:0;
+    top:0;
+    background: #111;
+    z-index: 1;
+    padding-top:60px;
+    overflow-x: hidden;
+    width:0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.menu-bar a{
+    color:plum;
+    text-decoration: none;
+    font-size:32px;
+    display: block;
+    padding:8px 8px 8px 32px;
+    transition: 0.3s;
+    
+}
+
+.menu-bar a:hover{
+    color:antiquewhite;
+}
+
+
+
 

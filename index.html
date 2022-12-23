@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
-    <title>Momentum App</title>
+    <title>헐랭툼</title>
 </head>
 <body>
+    <div>
+        
+        <p onclick="openNav()"><i class="fa-solid fa-bars fa-3x"></i></p>
+    </div>
+    <div class="menu-bar">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <a href="MEME-MAKER/index.html" target="_self"><i class="fa-solid fa-paintbrush fa-lg"></i>밈메이커</a>
+        <a href="index.html" target="_self"><i class="fa-solid fa-calculator fa-lg"></i>헐랭툼</a>
+        
+       
+    </div>
+    
     <div class="main">
         <div>
             <span id="clock">00:00:00</span>
@@ -38,24 +52,29 @@
             </div>
         </div>
        
+        <div id="weather">
+            <span id="weatherInfo"></span>
+            <img id="weatherIcon">
+        </div>
+    
+        <form id="log-out"class="hidden">
+            <button>로그아웃</button>
+        </form>
+
+        
     </div>
     
    
     
     
-    <div id="weather">
-        <span id="weatherInfo"></span>
-        <img id="weatherIcon">
-    </div>
-
-    <form id="log-out"class="hidden">
-        <button>로그아웃</button>
-    </form>
+    
+    <script src="https://kit.fontawesome.com/aa6ccc2321.js" crossorigin="anonymous"></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
